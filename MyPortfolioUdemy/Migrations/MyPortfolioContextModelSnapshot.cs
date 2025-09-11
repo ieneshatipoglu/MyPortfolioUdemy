@@ -38,6 +38,10 @@ namespace MyPortfolioUdemy.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("AboutId");
 
                     b.ToTable("Abouts");
